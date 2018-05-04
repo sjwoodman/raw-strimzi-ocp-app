@@ -144,6 +144,10 @@
                                         <expose>true</expose>
                                     </service>
                                 </labels>
+                                <env>
+                                    <KAFKA_SERVICE_HOST>my-cluster-kafka</KAFKA_SERVICE_HOST>
+                                    <KAFKA_SERVICE_PORT>9092</KAFKA_SERVICE_PORT>
+                                </env>
                             </resources>
                         </configuration>
                     </plugin>
