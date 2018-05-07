@@ -147,6 +147,7 @@
                                 <env>
                                     <KAFKA_SERVICE_HOST>my-cluster-kafka</KAFKA_SERVICE_HOST>
                                     <KAFKA_SERVICE_PORT>9092</KAFKA_SERVICE_PORT>
+                                    <KAFKA_TOPIC_SUCCESS>success.rate</KAFKA_TOPIC_SUCCESS>
                                 </env>
                             </resources>
                         </configuration>

@@ -17,7 +17,7 @@ public class SimpleConsumer implements Runnable {
 
     private static final String KAFKA_SERVICE_HOST = "KAFKA_SERVICE_HOST";
     private static final String KAFKA_SERVICE_PORT = "KAFKA_SERVICE_PORT";
-    private static final String TEST_TOPIC = "test.topic";
+    private static final String TEST_TOPIC = resolve("KAFKA_TOPIC_SUCCESS");
     private static final String KAFKA_CONSUMER_GROUP = "test-grp-ocp";
 
     private final AtomicBoolean running = new AtomicBoolean(Boolean.TRUE);
@@ -44,7 +44,7 @@ public class SimpleConsumer implements Runnable {
 
                     final String theValue = record.value();
 
-                    LOGGER.severe("HERE WE GO, Franz: " + theValue);
+                    LOGGER.severe("Received Success msg: " + theValue);
                 });
             }
         } catch (WakeupException e) {
