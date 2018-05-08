@@ -2,7 +2,7 @@
 
 Simple POC for running different programs on a Apache Kafka dataflow, through Strimzi.
 
-## Install Stimzi
+## Install Strimzi
 
 Install Strimzi into your Openshift cluster. Could be done with [Strimzi-APB](https://github.com/matzew/strimzi-apb)...
 

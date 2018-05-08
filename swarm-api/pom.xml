@@ -37,7 +37,6 @@
         <groupId>org.wildfly.swarm</groupId>
         <artifactId>wildfly-swarm-plugin</artifactId>
         <version>${version.wildfly.swarm}</version>
-        
         <executions>
           <execution>
             <goals>
@@ -45,6 +44,11 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <properties>
+            <java.net.preferIPv4Stack>true</java.net.preferIPv4Stack>
+          </properties>
+        </configuration>
       </plugin>
 
       <plugin>
@@ -71,7 +75,7 @@
               <KAFKA_SERVICE_PORT>9092</KAFKA_SERVICE_PORT>
               <KAFKA_TOPIC_SUCCESS>success.rate</KAFKA_TOPIC_SUCCESS>
               <KAFKA_TOPIC_FAIL>fail.rate</KAFKA_TOPIC_FAIL>
-            </env>            
+            </env>
           </resources>
         </configuration>
       </plugin>
