@@ -8,5 +8,5 @@ metadata:
 data:
   name: fail.rate
   partitions: "2"
-  replicas: "2"
+  replicas: "1"
 
